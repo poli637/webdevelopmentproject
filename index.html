@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>BedoyaPerezPaola Web Page</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="styles.css">
+   <style>
+
+       #container {
+           position: relative;
+       }
+       #video {
+           position: absolute;
+           top: 50px;
+           left: 50%;
+           transform: translateX(-50%);
+       }
+       #audio {
+           position: absolute;
+           top: calc(50% + 20px); 
+           left: 50%;
+           transform: translateX(-50%);
+       }
+       #image {
+           position: absolute;
+           bottom: 50px;
+           left: 50%;
+           transform: translateX(-50%);
+       }
+   </style>
+</head>
+<body>
+    <h1>BedoyaPerezPaola Web Page</h1>
+    
+    <h2>Favorite Movies</h2>
+    <ol>
+        <li>The Shawshank Redemption</li>
+        <li>The Dark Knight</li>
+        <li>The Passion of Christ</li>
+        <li>Matrix</li>
+        <li>Oppenheimer</li>
+    </ol>
+
+    <h2>Favorite Actors</h2>
+    <ul>
+        <li>Cillian Murphy</li>
+        <li>Keanu Reeves</li>
+        <li>Michael Cain</li>
+        <li>Andrew Garfield</li>
+        <li>Michael B. Jordan</li>
+    </ul>
+
+    <a href="http://www.amazon.com">Amazon</a>
+
+    <div id="container">
+        <video id="video" width="320" height="240" controls>
+            <source src="videoSample.mp4" type="video/mp4">
+        </video>
+        <audio id="audio" controls>
+            <source src="AudioSample.mp3" type="audio/mpeg">
+        </audio>
+        <img id="image" src="the-dark-knight.png" alt="The Dark Knight Image">
+    </div>
+</body>
+</html>
